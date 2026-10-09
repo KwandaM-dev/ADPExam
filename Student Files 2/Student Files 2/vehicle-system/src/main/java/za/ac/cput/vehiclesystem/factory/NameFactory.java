@@ -16,12 +16,16 @@ public class NameFactory {
 
         Name.Builder b = new Name.Builder()
                 .setFirstName(firstName)
-                .setMiddleName(middleName);
+                .setLastName(lastName);
 
         if(!Helper.isNullOrEmpty(middleName)){
             b.setMiddleName(middleName);
         }
 
-        return Name.Builder.build();
+        return new Name.Builder()
+                .setFirstName(firstName)
+                .setMiddleName(middleName)
+                .setLastName(lastName)
+                .build();
     }
 }

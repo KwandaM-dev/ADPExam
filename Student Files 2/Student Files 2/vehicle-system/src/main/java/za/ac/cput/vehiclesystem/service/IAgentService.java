@@ -5,7 +5,7 @@ import za.ac.cput.vehiclesystem.domain.Agent;
 
 import java.util.List;
 
-public interface IAgentService extends IService{
-    List<Agent> findAll();
-    Agent findById(Agent agen);
+public interface IAgentService extends IService<Agent, String>{
+    List<Agent> getAll();
+    Agent getByAgentId(String agentId);
 }

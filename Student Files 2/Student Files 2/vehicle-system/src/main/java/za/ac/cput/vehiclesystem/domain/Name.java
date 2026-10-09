@@ -65,7 +65,7 @@ public class Name {
             return this;
         }
 
-        public static Name build() {
+        public Name build() {
             return new Name(this);
         }
     }

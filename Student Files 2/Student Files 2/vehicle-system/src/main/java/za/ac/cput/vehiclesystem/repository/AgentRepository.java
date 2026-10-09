@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface AgentRepository extends JpaRepository<Agent, String> {
-    List<Agent> getAll();
-    Agent  getAgentById(String agentId);
+    List<Agent> findAll();
+    Agent  findAgentById(String agentId);
 }

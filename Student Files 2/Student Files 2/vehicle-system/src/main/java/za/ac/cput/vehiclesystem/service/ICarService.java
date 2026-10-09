@@ -7,6 +7,7 @@ import za.ac.cput.vehiclesystem.repository.CarRepository;
 import java.util.List;
 
 public interface ICarService extends IService{
-    List<Car> findAll();
+    List<Car> getAll();
+    Car getById(String vehicleId);
 
 }

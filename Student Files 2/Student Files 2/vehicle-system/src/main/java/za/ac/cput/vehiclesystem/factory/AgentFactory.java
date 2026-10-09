@@ -5,7 +5,7 @@ import za.ac.cput.vehiclesystem.domain.Name;
 import za.ac.cput.vehiclesystem.util.Helper;
 
 public class AgentFactory {
-    public static Agent.Builder createAgent(
+    public static Agent createAgent(
             String agentId,
             Name name,
             String email,
